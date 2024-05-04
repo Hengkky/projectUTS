@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrasi Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-navbar">
+        <h1>University Begadang</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="judul"><h1>Registrasi Mahasiswa</h1></div>
+    <div class="container">
+      <form action="koneksi.php" method="post">
+        <label for="nama">Nama Lengkap:</label><br />
+        <input type="text" id="nama" name="nama" required /><br />
+
+        <label for="nim">NIM:</label><br />
+        <input type="text" id="nim" name="nim" required /><br />
+
+        <label for="nomor_identitas">Nomor Identitas:</label><br />
+        <input
+          type="text"
+          id="nomor_identitas"
+          name="nomor_identitas"
+          required
+        /><br />
+
+        <label for="fakultas_jurusan">Fakultas/Jurusan:</label><br />
+        <input
+          type="text"
+          id="fakultas_jurusan"
+          name="fakultas_jurusan"
+          required
+        /><br />
+
+        <label for="tahun_masuk">Tahun Masuk Universitas:</label><br />
+        <input type="text" id="tahun_masuk" name="tahun_masuk" required /><br />
+
+        <label for="tempat_lahir">Tempat Lahir:</label><br />
+        <input
+          type="text"
+          id="tempat_lahir"
+          name="tempat_lahir"
+          required
+        /><br />
+
+        <label for="tanggal_lahir">Tanggal Lahir:</label><br />
+        <input
+          type="date"
+          id="tanggal_lahir"
+          name="tanggal_lahir"
+          required
+        /><br />
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label><br />
+        <select id="jenis_kelamin" name="jenis_kelamin" required>
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option></select
+        ><br /><br />
+
+        <button type="submit">
+          <a href="pembayaran/pembayaran.html">next</a>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

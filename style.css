@@ -1,0 +1,61 @@
+:root {
+  --bg: grey;
+  --text: black;
+  --thumbnil: orange;
+}
+body {
+  background-image: url(login.jpg);
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.login-container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* Warna putih dengan transparansi 50% */
+
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+.login-container h2 {
+  margin-bottom: 20px;
+  color: var(--thumbnil);
+}
+.login-container label {
+  color: var(--thumbnil);
+}
+
+.login-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.login-container button {
+  background-color: var(--text);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+.submit {
+  padding-top: 10px;
+}
+.login-container b {
+  width: 50%;
+  height: 100px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.header h2 {
+  margin-top: 0;
+}
+
+.content {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.footer p {
+  margin: 5px 0;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Registrasi Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h2>Identitas</h2>
+        <form action="#">
+          <div class="form-group">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required />
+          </div>
+          <div class="form-group">
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" name="nim" required />
+          </div>
+          <div class="form-group">
+            <label for="fakultas">Fakultas:</label>
+            <select id="fakultas" name="fakultas" required>
+              <option value="">Pilih Fakultas</option>
+              <option value="teknik">Teknik</option>
+              <option value="hukum">Hukum</option>
+              <option value="sastra">Sastra</option>
+              <option value="ilmu_sosial">Ilmu Sosial</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="prodi">Program Studi:</label>
+            <select id="prodi" name="prodi" required>
+              <option value="">Pilih Prodi</option>
+              <option value="informatika">Informatika</option>
+              <option value="informasi">Informasi</option>
+              <option value="pidana">Pidana</option>
+              <option value="pidata">Pidata</option>
+              <option value="inggris">Inggris</option>
+              <option value="jepang">Jepang</option>
+              <option value="budaya">Budaya</option>
+              <option value="politik">Politik</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="right">
+        <h2>Detail Pembayaran</h2>
+        <div class="detail">
+          <div class="form-group">
+            <label for="spp">SPP:</label>
+            <input type="text" id="spp" name="spp" readonly />
+          </div>
+          <div class="form-group">
+            <label for="biaya_sks">Biaya per SKS:</label>
+            <input type="text" id="biaya_sks" name="biaya_sks" readonly />
+          </div>
+          <div class="form-group">
+            <label for="total_biaya">Total Biaya:</label>
+            <input type="text" id="total_biaya" name="total_biaya" readonly />
+          </div>
+          <div class="form-group">
+            <label for="metode_pembayaran">Metode Pembayaran:</label>
+            <select id="metode_pembayaran" name="metode_pembayaran" required>
+              <option value="">Pilih Metode Pembayaran</option>
+              <option value="online">Online</option>
+              <option value="offline">Offline</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="back">
+      <button type="submit"><a href="halaman.html"></a>Back</button>
+    </div>
+
+    <div class="next">
+      <button type="submit" class="custom-button">
+        <a href="struk/kwitansi.html">Submit</a>
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
